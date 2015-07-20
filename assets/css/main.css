@@ -98,9 +98,19 @@ textarea {
 /* Main Conatiner */
 
 .container {
-    position: absolute;
-  width: 320px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
+
+.btn-container {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+
+}
+
+
 
 /*
 =================================
@@ -112,6 +122,8 @@ Head
 
 .top {
   height: 37px;
+  width: 100%;
+  text-align: center;
   background-color: #f3f3f3;
 }
 
@@ -120,7 +132,7 @@ Head
   width: 6px;
   position: relative;
   display: inline-block;
-  margin: 0 5px 0 61px;
+  margin: 0 5px 0 10px;
 }
 
 .top p {
@@ -142,19 +154,22 @@ Head
 
 .nav {
   height: 61px;
+  width: 100%;
+  text-align: center;
 }
 
 .nav img.menu {
   float: right;
   height: 30px;
   width: 30px;
-  margin: 16px 15px 0 0;
+  margin: 16px 0 0 0;
 }
 
 .nav img.logo {
+  float: left;
   width: 195px;
   height: 30px;
-  margin: 16px 0 0 15px;
+  margin: 16px 60px 0 5px;
 }
 
 /* Main image container */
@@ -162,12 +177,13 @@ Head
 .main-image {
   position: relative;
   height: 439px;
+  width: 100%;
   z-index: 1;
 }
 
 .main-image img {
-  position: absolute;
-  width: 320px;
+  position: relative;
+  width: 100%;
   height: 439px;
 }
 
@@ -210,14 +226,13 @@ Head
 
 .how-btn {
   display: block;
-  position: absolute;
-  z-index: 1;
-  top: 331px;
+  position: relative;
+  z-index: 3;
   width: 182px;
   height: 23px;
+    top: 262px;
+  margin: 0 auto;
   padding-top: 8px;
-  margin-left: 69px;
-  margin-top: 30px;
   background-image: url(../imgs/become-volunteer.png);
   background-repeat: repeat-x;
   letter-spacing: .6px;
@@ -233,14 +248,20 @@ Head
 
 /* Recent news articles */
 
-.recent-news {
-  display: inline-block;
-  margin: 0 0 0 15px;
+.news-container {
   position: absolute;
+  width: 100%;
+  z-index: 3;
+  top: 324px;
+}
+
+.recent-news {
+  display: block;
+  margin: 0 auto;
+  position: relative;
   width: 290px;
   height: 101px;
-  top: 421px;
-  z-index: 2;
+    z-index: 2;
 }
 
 .left-col {
@@ -322,6 +343,7 @@ Head
 }
 
 .cause-head {
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -346,8 +368,13 @@ Head
 }
 
 .cause-head img {
-    width: 22.5px;
-    height: 20px;
+  width: 22.5px;
+  height: 20px;
+}
+
+.cause-head img#hr {
+  width: 100%;
+  height: 5px;
 }
 
 /* Primary cause */
@@ -386,15 +413,17 @@ Head
   height: 223px;
 }
 
-img.percent {
+.percent{
   position: absolute;
+  width: 100%;
   z-index: 2;
+  top: 182px;
+}
+
+.percent img {
+  position: relative;
   width: 50px;
   height: 50px;
-  display: block;
-  margin: 0 auto;
-  margin: 122.5px 0 0 131.5px;
-  top: 60px;
 }
 
 /* Cause information */
@@ -506,8 +535,8 @@ img.percent {
 .volunteer-head img#back {
     position: relative;
     z-index: 1;
-    width: 320px;
-    height: 233px;
+    width: 100%;
+    height: 223px;
     top: 0;
     display: inline-block;
 }
@@ -543,19 +572,22 @@ img.percent {
   font-size: 10px;
 }
 
-.volunteer-head a#volunteer {
+#volunteer {
+  z-index: 2;
+
+}
+
+#volunteer a {
   z-index: 2;
   display: block;
   padding-top: 8px;
-  left: 95px;
-  top: 151px;
+  top: -74px;
   width: 130px;
   height: 22px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   background-image: url(../imgs/become-volunteer.png);
   background-repeat: repeat-x;
-  text-align: center;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   text-decoration: none;
   font-size: 10px;
@@ -671,6 +703,12 @@ img.percent {
   width: 100%;
 }
 
+.about-banner {
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+
 .about img {
     position: relative;
     z-index: 2;
@@ -682,28 +720,28 @@ img.percent {
 .about img#back {
     position: relative;
     z-index: 1;
-    width: 320px;
-    height: 360px;
+    width: 100%;
+    height: 350px;
     top: 0;
     display: inline-block;
 }
 
 .about img#index-2 {
-    position: absolute;
     z-index: 2;
     width: 316.5px;
     height: 2.5px;
+    margin: 0 auto;
     left: 1px;
     top: 0;
 }
 
+
 .about img#index-3 {
-    position: absolute;
     z-index: 3;
+    margin: 0 auto;
     width: 157.5px;
-    height: 86.5px;
-    top: -23px;
-    left: 78px;;
+    height: 90.5px;
+    top: -27px;
 }
 
 /* About overlay words */
@@ -718,8 +756,8 @@ img.percent {
   position: absolute;
   z-index: 2;
   margin: 0 auto;
+  width: 100%;
   top: 88px;
-  left: 69px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: 100;
   font-size: 19px;
@@ -733,7 +771,7 @@ img.percent {
   z-index: 2;
   margin: 0 auto;
   top: 221px;
-  left: 20px;
+  width: 100%;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: 100;
   font-size: 11px;
@@ -765,8 +803,7 @@ img.percent {
   overflow: hidden;
   z-index: 2;
   display: block;
-  padding: 0 50px;
-  left: 75px;
+  width: 100%;
   top: 153px;
   margin: 0 auto;
   position: absolute;
@@ -807,12 +844,11 @@ h5 span:after {
   z-index: 2;
   display: block;
   padding-top: 8px;
-  left: 95px;
-  top: 276px;
+  top: -97px;
   width: 131px;
   height: 22px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   background-image: url(../imgs/readmore.png);
   background-repeat: repeat-x;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -828,6 +864,7 @@ h5 span:after {
 Newsletter
 ====================================
 */
+
 
 .newsletter {
   display: block;
@@ -884,7 +921,6 @@ Newsletter
 .newsletter input {
   position: absolute;
   display: inline-block;
-  border-radius: 1px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 8px;
   width: 215.5px;
@@ -944,7 +980,8 @@ Testimonies
   position: relative;
   display: inline-block;
   float: left;
-  width: 45%;
+  width: 40%;
+  left: 1px;
   top: 3px;
   right: 14px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -958,9 +995,9 @@ Testimonies
   position: relative;
   display: inline-block;
   float: right;
-  width: 45%;
+  width: 40%;
   top: 12px;
-  left: 10px;
+  left: -8px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 9px;
   text-align: left;
@@ -974,8 +1011,8 @@ Testimonies
 }
 
 .testimony p.quote {
-  margin: 15px 0 24px 38px;
-  width: 246px;
+  margin: 16px 0 24px 0;
+  width: 100%;
   text-align: center;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 10px;
@@ -1081,6 +1118,10 @@ Bottom Nav
   padding: 0;
   display: block;
   margin: 8px 0 0 27px;
+}
+
+.social-container {
+  width: 100%;
 }
 
 .socials li {

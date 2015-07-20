@@ -2,6 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Charity</title>
     <link href="./assets/css/main.css" rel="stylesheet">
     <link href="./assets/css/normalize.css" rel="stylesheet">	
@@ -19,31 +20,36 @@
       </div>
 
       <div class="main-image">
-        <img src="./assets/imgs/slider.png" alt="">
+        
         <div class="hero">
           <h2>Help. One word.</h2>
           <p>You can help them. <br /> Join the ranks of our volunteers</p>
         </div>
-      </div>
-
-      <div class="how-btn">
-      	<a href="#">How do I become a volunteer?</a>
-      </div>
-        
-
-      <div class="recent-news">
-        <div class="left-col">
-          <div class="date">
-            <h2>25</h2><p>May 2015</p>
-            <h3>Humanitarian aid in Africa</h3>
+        <div class="btn-container">
+          <div class="how-btn">
+            <a href="#">How do I become a volunteer?</a>
           </div>
-          <img src="./assets/imgs/recent-news.png" alt="">
         </div>
-        <div class="right-col">
-          <p>Suspendisse tempus efficitur sodales. <br /><br /> Fusce felis ante, lobortis non ornare a, commodo quis purus. Curabitur purus enim, laoreet.
-          </p>
+        <div class="news-container">
+          <div class="recent-news">
+            <div class="left-col">
+              <div class="date">
+                <h2>25</h2><p>May 2015</p>
+                <h3>Humanitarian aid in Africa</h3>
+              </div>
+              <img src="./assets/imgs/recent-news.png" alt="">
+            </div>
+            <div class="right-col">
+            <p>Suspendisse tempus efficitur sodales. <br /><br /> Fusce felis ante, lobortis non ornare a, commodo quis purus. Curabitur purus enim, laoreet.
+            </p>
+            </div>
+          </div>
         </div>
+        <img src="./assets/imgs/slider.png" alt="">
       </div>
+      
+
+      
       
 
       <div class="causes">
@@ -51,13 +57,15 @@
           <img src="./assets/imgs/family.png" alt="">
           <p>You can help lots of people<br /> by donating little.<a href=""> See Our Causes.
           </a></p>
-          <img src="./assets/imgs/causes-hr.png" alt="">
+          <img id="hr" src="./assets/imgs/causes-hr.png" alt="">
         </div>
         <article class="cause">
           <h3>Help African children to have homes</h3>
           <div class="photos">
     	        <img src="./assets/imgs/africa.png" alt="">
-              <img class=" percent" src="./assets/imgs/percent.png" alt="">
+              <div class="percent">
+                <img src="./assets/imgs/percent.png" alt="">
+              </div>
           </div>
        	  <p id="donation">Donation: <a id="current" href="#"> $94,981</a>/$120,000</p>
     	    <p>Suspendisse tempus efficitur sodales.<br />  Fusce felis ante, loborti non ornare a, quis purus</p>
@@ -76,7 +84,11 @@
           <img id="back" src="./assets/imgs/volunteer.png" alt="">
     	    <h2>Anyone can be a volunteer.<br /> Also you.</h2>
     	    <p>Nam fringilla ornare ex, eu dictum sem. Nunc quis ante lectus. <br /> Proin viverra vestibulum odio in egestas</p>
-          <a id="volunteer" href="#">Become a volunteer</a>
+          <div class="btn-container">
+            <div id="volunteer">
+              <a href="#">Become a volunteer</a>
+            </div>
+          </div>
         </section>
         <div class="help">
             <article class="volunteer-second">
@@ -93,9 +105,11 @@
       </div>
 
       <div class="about">
+        <div class="about-banner">
+          <img id="index-2" src="./assets/imgs/about-us-rec.png" alt="">
+          <img id="index-3" src="./assets/imgs/about-logo.png" alt="">
+        </div>
         <img id="back" src="./assets/imgs/about-us.png" alt="">
-        <img id="index-2" src="./assets/imgs/about-us-rec.png" alt="">
-        <img id="index-3" src="./assets/imgs/about-logo.png" alt="">
 
         <section class="about-head">
           <h3>CharityHand.<br /> We help voluntarily.</h3>
@@ -105,7 +119,9 @@
           <br />
           <p id="about">We work constantly and we strive for.</p>
           <h4>Nam fringilla ornare ex, eu dictum sem. Nunc quis ante lectus. <br /> Proin viverra vestibulum odio in egestas.</h4>
-          <a class="btn" href="#">Read more about us</a>
+          <div class="btn-container">
+            <a class="btn" href="#">Read more about us</a>
+          </div>
         </section>
 
     	<section class="newsletter">
@@ -140,6 +156,8 @@
           <div class="connect">
           	<h3>Connect</h3>
               <p>Nunc feugiat mauris.</p>
+
+              <div class="list-container">
               <ul class="socials">
                 <li class="facebook">
                   <a href="facbook.com">
@@ -157,6 +175,9 @@
                   </a>
                 </li>
               </ul>
+              </div>
+
+              
           </div>
         </div>
       </div>
